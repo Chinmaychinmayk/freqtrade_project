@@ -2,14 +2,13 @@
 # flake8: noqa: F401
 # isort: skip_file
 
-# --- Do not remove these imports ---
+
 import numpy as np
 import pandas as pd
 from pandas import DataFrame
 from datetime import datetime
 from freqtrade.strategy import IStrategy
 from freqtrade.persistence import Trade
-# Alternative manual calculation if import doesn't work
 
 
 class BreakoutStrategy(IStrategy):
@@ -28,7 +27,7 @@ class BreakoutStrategy(IStrategy):
     minimal_roi = {"0": 100}  # Effectively disable ROI-based exits
     stoploss = -0.99  # Wide initial stoploss, overridden by custom_stoploss
     
-    # Ensure only one trade at a time
+    # Ensures only one trade at a time
     max_open_trades = 1
     
     # These are required for all strategies
