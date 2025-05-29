@@ -102,21 +102,3 @@ This repository provides a Freqtrade setup for backtesting and running trading s
   ```bash
   nano docker-compose.yml
   ```
-
-## Troubleshooting
-- **No Trades**: Verify data in `ft_userdata/data/binance/` and check logs:
-  ```bash
-  cat ft_userdata/logs/*
-  ```
-- **Docker Issues**: Pull latest image:
-  ```bash
-  docker compose pull
-  ```
-- **Config Errors**: Validate `config_pair.json`:
-  ```bash
-  jq . ft_userdata/config_pair.json
-  ```
-- **Community**: [Freqtrade Discord](https://discord.com/invite/4N4zCjr).
-
-## License
-MIT License. See [LICENSE](LICENSE) for details.
