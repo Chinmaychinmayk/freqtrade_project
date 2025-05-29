@@ -1,0 +1,15 @@
+
+services:
+  freqtrade:
+    image: freqtradeorg/freqtrade:stable
+    restart: unless-stopped
+    container_name: freqtrade
+    volumes:
+      - "./ft_userdata:/freqtrade/user_data"
+    command: >
+      trade
+      --config user_data/config.json
+      --strategy SampleStrategy BreakoutStrategy PairBreakoutStrategy
+      --dry-run
+      --dry-run-wallet 1000
+      --logfile user_data/freqtrade.log

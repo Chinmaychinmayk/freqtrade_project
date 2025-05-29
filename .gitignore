@@ -1,0 +1,6 @@
+ft_userdata/data/
+ft_userdata/logs/
+ft_userdata/freqtrade.log
+ft_userdata/backtest_results/
+__pycache__/
+*.pyc
