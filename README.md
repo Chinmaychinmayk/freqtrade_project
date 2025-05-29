@@ -93,12 +93,3 @@ This repository provides a Freqtrade setup for backtesting and running trading s
      ```bash
      docker compose up -d
      ```
-
-## Notes
-- **Data**: Historical data is stored in `ft_userdata/data/binance/`. Ensure data is downloaded before backtesting.
-- **Backtest Results**: Saved in `ft_userdata/backtest_results/`.
-- **Logs**: Check `ft_userdata/logs/` or `ft_userdata/freqtrade.log` for debugging.
-- **docker-compose.yml**: Ensure no `version` attribute to avoid warnings:
-  ```bash
-  nano docker-compose.yml
-  ```
