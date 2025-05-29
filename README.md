@@ -73,6 +73,9 @@ This repository provides a Freqtrade setup for backtesting and running trading s
      ```bash
      docker compose up -d
      ```
+![Screenshot 2025-05-29 at 7 50 29 AM](https://github.com/user-attachments/assets/9e5581a7-7349-458c-afa5-ffb49de37223)
+
+
 
 #### PairBreakoutStrategy
 - **Description**: Enters long positions in ETH/USDT when BTC/USDT breaks above a 20-period high, using a 3-period low stoploss. Designed for spot markets, it leverages BTC/ETH correlation.
