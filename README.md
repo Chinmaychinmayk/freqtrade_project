@@ -93,3 +93,5 @@ This repository provides a Freqtrade setup for backtesting and running trading s
      ```bash
      docker compose up -d
      ```
+![Screenshot 2025-05-29 at 7 50 29 AM](https://github.com/user-attachments/assets/87839462-8640-4c2f-ae70-615c87923998)
+
